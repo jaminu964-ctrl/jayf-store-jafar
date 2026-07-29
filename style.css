@@ -1,59 +1,167 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-header {
-    background: #0d47a1;
-    color: white;
-    text-align: center;
-    padding: 25px;
+body{
+background:#f5f5f5;
+color:#333;
+line-height:1.6;
 }
 
-nav {
-    background: #1565c0;
-    text-align: center;
-    padding: 15px;
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0d6efd;
+color:#fff;
+flex-wrap:wrap;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
+.logo h1{
+font-size:30px;
 }
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
+.logo p{
+font-size:14px;
 }
 
-button {
-    background: #ff9800;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.products {
-    padding: 30px;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
 }
 
-.product {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+nav a:hover{
+color:#ffd700;
 }
 
-footer {
-    background: #0d47a1;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.admin-btn{
+background:white;
+color:#0d6efd;
+padding:8px 15px;
+border-radius:6px;
+}
+
+.hero{
+padding:80px 8%;
+text-align:center;
+background:linear-gradient(135deg,#0d6efd,#4dabff);
+color:white;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.shop-btn{
+display:inline-block;
+background:#fff;
+color:#0d6efd;
+padding:12px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.products{
+padding:60px 8%;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.product-card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#0d6efd;
+font-size:22px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.product-card button{
+background:#0d6efd;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+}
+
+.about,.contact{
+padding:60px 8%;
+text-align:center;
+background:white;
+margin-top:20px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:15px;
+justify-content:center;
+}
+
+.hero h2{
+font-size:30px;
+}
 }
