@@ -4,45 +4,135 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JAYF STORE</title>
+
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <h1>JAYF STORE</h1>
-    <p>Quality Gadgets & Accessories</p>
-</header>
+<header class="header">
+
+<div class="logo">
+<h1>JAYF STORE</h1>
+<p>Quality Gadgets & Accessories</p>
+</div>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+<a href="admin.html" class="admin-btn">Admin</a>
+
 </nav>
 
-<section class="hero">
-    <h2>Welcome to JAYF STORE</h2>
-    <p>Your trusted online shopping destination.</p>
-    <button>Shop Now</button>
+</header>
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h2>Shop Smart.<br>Shop JAYF STORE.</h2>
+
+<p>
+Buy quality gadgets and accessories at affordable prices with fast delivery.
+</p>
+
+<a href="#products" class="shop-btn">
+Shop Now
+</a>
+
+</div>
+
 </section>
 
-<section class="products">
-    <h2>Featured Products</h2>
+<section id="products" class="products">
 
-    <div class="product">
-        <h3>Fast Charger Cable</h3>
-        <p>₦1,500</p>
-    </div>
+<h2>Featured Products</h2>
 
-    <div class="product">
-        <h3>Tripod</h3>
-        <p>₦8,000</p>
-    </div>
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250" alt="Product">
+
+<h3>Fast Charger Cable</h3>
+
+<p class="price">₦1,500</p>
+
+<button>Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250" alt="Product">
+
+<h3>Wireless Headphone</h3>
+
+<p class="price">₦18,000</p>
+
+<button>Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250" alt="Product">
+
+<h3>Bluetooth Speaker</h3>
+
+<p class="price">₦22,000</p>
+
+<button>Add to Cart</button>
+
+</div></div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About JAYF STORE</h2>
+
+<p>
+JAYF STORE is your trusted online store for quality gadgets,
+electronics and accessories. We provide affordable prices,
+excellent customer service and reliable delivery.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>WhatsApp:</strong> +234 XXX XXX XXXX</p>
+
+<p><strong>Email:</strong> jayfstore@email.com</p>
+
+<p><strong>Location:</strong> Nigeria</p>
+
+<a href="https://wa.me/234XXXXXXXXXX" class="whatsapp-btn">
+Order on WhatsApp
+</a>
+
 </section>
 
 <footer>
-    <p>© 2026 JAYF STORE. All Rights Reserved.</p>
+
+<p>&copy; 2026 JAYF STORE. All Rights Reserved.</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
